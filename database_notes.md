@@ -1,4 +1,5 @@
-Database names can be found in database.yml
+
+**Postgres**
 
 To import a seed file:
 ```
@@ -9,6 +10,7 @@ To dump a seed file:
 ```
 pg_dump db_name < output_file
 ```
+*note that database names can be found in database.yml
 
 in your ~/.bash_profile file:
 ```
