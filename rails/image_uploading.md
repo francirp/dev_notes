@@ -1,4 +1,5 @@
-**Adding an Avatar: Paperclip + S3**
+Adding an Avatar: Paperclip + S3
+================================
 
 Step 1: Add paperclip:
 

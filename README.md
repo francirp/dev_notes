@@ -1,11 +1,13 @@
-Notes for the following:
+Development Reference Notes
+================================
 
-Rails
-Ruby
-Git
-Heroku
-Database Management
-Sublime Text
-Workflow
-HTML / CSS
-Saas
+Topics include the following:
+
+*Rails
+*Ruby
+*Git
+*Heroku
+*Databases
+*Sublime Text
+*Development Workflow
+*Frontend
