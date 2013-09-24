@@ -50,10 +50,9 @@ In your edit and new views:
 <% end %>
 ```
 
-Step 2: Add a storage client:
+Step 2: Add Amazon S3
 --------------------------------
 
-If you're going to use Amazon S3 to store image:
 ```ruby
 gem 'aws-sdk'
 ```
