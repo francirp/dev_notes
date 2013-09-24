@@ -1,7 +1,8 @@
 Adding an Avatar: Paperclip + S3
 ================================
 
-Step 1: Add paperclip:
+Step 1: Add Paperclip:
+--------------------------------
 
 https://github.com/thoughtbot/paperclip
 
@@ -48,6 +49,9 @@ In your edit and new views:
   <%= form.file_field :avatar %>
 <% end %>
 ```
+
+Step 2: Add a storage client:
+--------------------------------
 
 If you're going to use Amazon S3 to store image:
 ```ruby
