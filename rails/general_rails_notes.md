@@ -1,6 +1,6 @@
 **HTTP Authentication**
 ```ruby
-http_basic_authenticate_with name: "admin", password: "conifer1"
+http_basic_authenticate_with name: "admin", password: "password"
 ```
 
 **Email Regex**
