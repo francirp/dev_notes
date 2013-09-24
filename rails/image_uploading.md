@@ -74,5 +74,4 @@ config.paperclip_defaults = {
   }
 }
 ```
-
-You can go to Amazon S3 and set up an account if you haven't already to get these ENV variables. Make sure to set the ENV variables in a .env file or you can do what I always do which is install the gem figaro which gives you an application.yml file to put your ENV variables in and automatically adds it to .gitignore.
+Make sure to create your own Amazon account and setup your environment variables to store your Amazon access key, secret key, and bucket. I like to use the Figaro gem to manage my ENV variables: https://github.com/laserlemon/figaro
