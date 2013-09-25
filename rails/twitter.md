@@ -69,6 +69,7 @@ Add a link to create an account via Twitter in your view of choice:
 
 Now make sure to restart your server and give it a shot!
 
+I also highly recommend the Twitter gem for retrieving from Twitter or posting to Twitter on behalf of a user: https://github.com/sferik/twitter
 
 Appendix
 --------------------------------
