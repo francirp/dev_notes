@@ -53,7 +53,7 @@ def create
 end
 ```
 
-Now you will need to create an application on twitter developers and retrieve your app's twitter key and twitter secret. Put both of these into environment variables (for more information on environment variables, see www.github.com/francirp/dev_notes/rails/environment_variables.md)
+Now you will need to create an application on twitter developers and retrieve your app's twitter key and twitter secret. Put both of these into environment variables (for more information on environment variables, see https://github.com/francirp/dev_notes/blob/master/rails/environment_variables.md)
 
 Create a new file config/initializers/omniauth.rb:
 ```ruby
