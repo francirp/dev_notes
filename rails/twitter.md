@@ -6,6 +6,7 @@ Twitter Omniauth
 * omniauth: https://github.com/intridea/omniauth
 * figaro for environment variables: https://github.com/laserlemon/figaro
 
+
 In your gemfile:
 ```ruby
 gem 'omniauth-oauth2'
