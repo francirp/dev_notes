@@ -36,3 +36,6 @@ git reset --hard remotes/origin/HEAD
 
 To avoid entering password for every push:
 git config remote.origin.url git@github.com:the_repository_username/your_project.git
+
+
+git remote add origin https://github.com/user/repo.git

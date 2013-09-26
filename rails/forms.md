@@ -7,7 +7,9 @@ This is useful for dealing with models and an array of predefined options (not f
 Our model is "Budget" and our column in the database is "Year"
 <%= select :budget, :year, 2000..2050 %>
 
-* select_tag
+* select_tag: The options_for_select or options_from_collection_for_select often need to be used in tandem with select_tag.
+<%= select_tag :state, collection_for_select(us_states, @city.state) %> where us_states is a helper method that returns an array of states (i.e. ["AK", "OH", "IL"]).
+
 * options_for_select
 
 form_for
