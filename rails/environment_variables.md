@@ -13,7 +13,10 @@ rails generate figaro:install
 
 This creates a commented config/application.yml file and ignores it in your .gitignore. Add your own configuration to this file
 
-Example:
+Example Usage after Install
+---------------------------------
+
+In config/application.yml:
 
 ```ruby
 EMAIL_USERNAME: dev@example.com
@@ -48,3 +51,5 @@ To confirm the environment variables were set correctly:
 ```
 heroku config
 ```
+
+You should see the appropriate environment variables and their corresponding values.
