@@ -1,6 +1,13 @@
-form_tag
+Helper Methods
+----------------------------
+**General**
+* Turn Input Field Autocomplete Off: :autocomplete => :off
+* Set Maximum Character Length: :maxlength => 15
+* Set Autofocus (i.e. when user goes to page, cursor will automatically be placed in form field): :autofocus => true
+* Placeholder: :placeholder => "Text Here"
 
-Helper Methods:
+
+**form_tag**
 
 * select:
 This is useful for dealing with models and an array of predefined options (not from a model). Let's build a dropdown to allow the user to pick a year for our budget.
@@ -8,11 +15,11 @@ Our model is "Budget" and our column in the database is "Year"
 <%= select :budget, :year, 2000..2050 %>
 
 * select_tag: The options_for_select or options_from_collection_for_select often need to be used in tandem with select_tag.
-<%= select_tag :state, collection_for_select(us_states, @city.state) %> where us_states is a helper method that returns an array of states (i.e. ["AK", "OH", "IL"]).
+<%= select_tag :state, options_for_select(us_states, @city.state) %> where us_states is a helper method that returns an array of states (i.e. ["AK", "OH", "IL"]).
 
 * options_for_select
 
-form_for
+**form_for**
 
 Helper Methods:
 
