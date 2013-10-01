@@ -56,19 +56,23 @@ end
 
 **Wicked PDF Helpers**
 
-In order to include your css and javascript in your PDF's, you will need to use the Wicked PDF helper methods.
+In order to include your css and javascript in your PDF's, you will need to use the Wicked PDF helper methods. Create the following file: views/layouts/application.pdf.erb.  This file should have the full HTML structure, much like the application.html.erb file.
 
-Create the following file: views/layouts/application.pdf.erb
+To add your stylesheet, javascript, or image, use the following helper method in the application.pdf.erb file:
+* Stylesheet: wicked_pdf_stylesheet_link_tag "application.css"
+* Javascript: wicked_pdf_javascript_include_tag "number_pages"
+* Image: wicked_pdf_image_tag 'mysite.jpg'
 
-Then add the following, where pdf.css is the appropriate stylesheet for your PDF.
+*Note that if you are using sass, you will still need to use .css instead of .scss as the file extension of your wicked_pdf helper method:  <%= wicked_pdf_stylesheet_link_tag "application.css" %> instead of <%= wicked_pdf_stylesheet_link_tag "application.scss" %>
 
+
+**Example of these helper methods:**
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <%= wicked_pdf_stylesheet_link_tag "pdf.css" %>
+    <%= wicked_pdf_stylesheet_link_tag "application.css" %>
     <%= wicked_pdf_javascript_include_tag "number_pages" %>
   </head>
   <body onload='number_pages'>
@@ -81,6 +85,16 @@ Then add the following, where pdf.css is the appropriate stylesheet for your PDF
   </body>
 </html>
 ```
+
+Lastly, you will need to add :layout => true to the controller method in order to pull in the application.pdf.erb file:
+
+```ruby
+        render  :pdf => "file_name",
+                :layout => true
+```
+
+Appendix
+-----------------------------
 
 **Advanced Usage with all Available Options**
 
