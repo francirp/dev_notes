@@ -25,3 +25,38 @@ The helper method knows that :year is a column in "Budget" model because we spec
 This is useful if your options derive from a column in your model
 Adding an employee to a model with foreign key employee_id:
 <%= f.collection_select :employee_id, Employee.order('full_name ASC').all, :id, :full_name %>
+
+Adding an ID and Class to the form:
+<%= form_for(@user, html: {class: 'form-horizontal', id: 'signup_form'}) do |f| %>
+
+
+Error Messages
+-------------------------------
+
+```scss
+#signup_form {
+  .error_messages {
+    width: $badge-width;
+    margin-top: 20px;
+    color: red;
+  }
+  .field_with_errors {
+    input[type="text"], input[type="email"] {
+      border: thin solid red;
+    }
+  }
+}
+```
+
+```html
+<%= form_for(@user, html: {id: 'signup_form', class: 'form-horizontal'}) do |f| %>
+  <% if @user.errors.any? %>
+    <h2>Please Correct the Following Errors</h2>
+    <div class="error_messages">
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+```

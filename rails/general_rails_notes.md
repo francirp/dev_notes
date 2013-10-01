@@ -35,3 +35,8 @@ en:
               blank: "A description is required to create a post"
 ```
 
+**Truncate**
+```ruby
+<%= truncate(part.description, length: 50)
+```
+Link: http://api.rubyonrails.org/classes/ActionView/Helpers/TextHelper.html#method-i-truncate
