@@ -16,7 +16,7 @@ end
 ```
 
 Parts Index
-```html
+```
 <%= paginate @parts %>
 <% @parts.each do |part| %>
   ...
