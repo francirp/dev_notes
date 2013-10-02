@@ -1,11 +1,24 @@
+Forms with Rails
+====================================
+
+Styling
+------------------------------------
+
+To center placeholders vertically, in your sass put the following:
+```sass
+input[type="text"] {
+  line-height: normal;
+}
+```
+
+
 Helper Methods
-----------------------------
-**General**
+------------------------------------
+
 * Turn Input Field Autocomplete Off: :autocomplete => :off
 * Set Maximum Character Length: :maxlength => 15
 * Set Autofocus (i.e. when user goes to page, cursor will automatically be placed in form field): :autofocus => true
 * Placeholder: :placeholder => "Text Here"
-
 
 **form_tag**
 
