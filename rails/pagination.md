@@ -23,3 +23,18 @@ Parts Index
 <% end %>
 <%= paginate @parts %>
 ```
+
+
+Styling with Kaminari
+---------------------------
+
+To see a list of themes available, run the following:
+```
+rails g kaminari:views
+```
+As of October 2013, Kaminari offers bootstrap, github, google, and default themes.
+
+To generate the default views:
+```
+rails g kaminari:views default
+```
